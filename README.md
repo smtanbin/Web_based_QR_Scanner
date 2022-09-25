@@ -30,11 +30,6 @@ git remote remove boilerplate
 
 or ...
 
-### Use Zip
-
-1. Download package file:
-    <https://github.com/piecioshka/boilerplate-webpack-babel/archive/master.zip>
-2. Extract it to your project directory.
 
 ## How to build an application?
 
@@ -90,5 +85,6 @@ npm run build:production -- --env addons=firstAddon,secondAddon
 ```
 
 ## License
+Credit  https://github.com/piecioshka/boilerplate-webpack-babel/archive/master.zip
 
 [The MIT License](http://piecioshka.mit-license.org) @ 2017-2022
