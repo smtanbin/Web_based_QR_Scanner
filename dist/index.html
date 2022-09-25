@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+</head>
+
+<body>
+    <div class="hero bg-primary">
+        <div class="hero-body p-centered">
+            <h1>QR Code</h1>
+        </div>
+    </div>
+    <main class="container">
+        <div class="columns">
+            <div class="column col-4 col-lg-6 col-md-8 col-sm-12 p-centered">
+                <div class="m-1 p-centered">
+                    <div class="empty" id="empty">
+                        <div class="empty-icon">
+                            <i class="icon icon-photo"></i>
+                        </div>
+                        <p class="empty-title h5">Press Start to scan</p>
+
+                        <div class="empty-action">
+                            <button class="btn btn-primary" onclick="scanqr()">Scan</button>
+                        </div>
+                    </div>
+                    <video id="videoElem" class="col-12 d-none"></video>
+                </div>
+                <!-- form select control -->
+
+                <div class="form-group">
+                    <select class="form-select" id="camlist">
+                        <option>Select Camara</option>
+
+                    </select>
+                </div>
+
+                <!-- column content -->
+            </div>
+            <div class="column  col-8 col-lg-6 col-md-4 col-sm-12">
+                <table class="table p-2">
+                    <thead>
+                        <tr>
+                            <th>Time</th>
+                            <th>Massage</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table_output">
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </main>
+    <script src="bundle.js"></script>
+</body>
+
+</html>
